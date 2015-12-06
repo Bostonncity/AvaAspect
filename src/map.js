@@ -7,7 +7,7 @@ import difference from 'lodash.difference'
 import ObservationStore from './observations'
 import Actions from './actions'
 
-L.Icon.Default.imagePath = 'node_modules/leaflet/dist/images'
+L.Icon.Default.imagePath = 'img'
 
 
 class Map extends React.Component {
