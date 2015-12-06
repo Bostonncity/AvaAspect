@@ -1,0 +1,107 @@
+
+html,
+body,
+.app,
+.dashboard,
+.leaflet-container {
+    height: 100%;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    height: 10px;
+    width: 90px;
+    background-color: #F5F5F5;
+    padding: 10px 5px 5px;
+    font-size: 11px;
+}
+
+.filter {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 23px;
+    left: 15px;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.176);
+}
+
+.filter .bg {
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    border-radius: 36px;
+    background: #FFF url("/img/compass.png") no-repeat scroll 50% 50% / 42px auto;
+}
+
+.filter .dir {
+    position: absolute;
+    border-radius: 100px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    color: #000;
+    border: medium none;
+    font-size: 8px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    outline: 0px none;
+    cursor: pointer;
+}
+
+.filter .dir:hover {
+    background: #ccc
+}
+
+.filter .dir.dir-N {
+    top:0;
+    left:50%;
+    margin-left:-9px
+}
+.filter .dir.dir-NE {
+    top:8px;
+    right:8px
+}
+.filter .dir.dir-NW {
+    top:8px;
+    left:8px
+}
+.filter .dir.dir-W {
+    bottom:50%;
+    margin-bottom:-9px;
+    left:0
+}
+.filter .dir.dir-E {
+    bottom:50%;
+    margin-bottom:-9px;
+    right:0
+}
+.filter .dir.dir-S {
+    bottom:0;
+    left:50%;
+    margin-left:-9px
+}
+.filter .dir.dir-SE {
+    bottom:8px;
+    right:8px
+}
+.filter .dir.dir-SW {
+    bottom:8px;
+    left:8px
+}
+
+.filter svg {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    pointer-events: none
+}
