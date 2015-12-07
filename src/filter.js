@@ -60,8 +60,8 @@ class Filter extends React.Component {
 
     setAspectFromEvent = e => {
         let rect = ReactDOM.findDOMNode(this).getBoundingClientRect()
-          , x = e.clientX - rect.x
-          , y = e.clientY - rect.y
+          , x = e.clientX - rect.left
+          , y = e.clientY - rect.top
           , deltaY = y - Filter.centerY
           , deltaX = x - Filter.centerX
           , deg = Filter.deg(Math.atan2(deltaY, deltaX)) + 90
@@ -162,6 +162,8 @@ class RadarChart extends React.Component {
     }
 
     render = _ => {
+        if (this.props.observations.length === 0) return null
+
         //             n  ne e  se s  sw w  nw
         let aspects = [0, 0, 0, 0, 0, 0, 0, 0]
           , centerX = Filter.centerX
